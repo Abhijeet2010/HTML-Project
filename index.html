@@ -24,6 +24,18 @@
         padding: 15px;
         border-radius: 10px;
       }
+
+      td {
+            border-style: double;
+            background-color: silver;
+
+           
+        }
+        .tables {
+             margin-left: auto;
+             margin-right: auto;  
+             border-spacing: 0 1px; 
+        }
     </style>
   </head>
   <body>
@@ -832,14 +844,59 @@
 
       <p>For example, you could make the following sequence of moves:</p>
 
-      <div style="text-align: center">
-        <img
-          src="images/chart-ball.jfif"
-          width="700px"
-          height="600px"
-          alt=""
-        />
-      </div>
+        <table class="tables" >
+            <tr>
+                <th><b>Starting position:</b></th>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+            </tr>
+            <tr>
+                <th><b>Black moves ahead:</b></th>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+            </tr>
+            <tr>
+                <th><b>White jumps:</b></th>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+            </tr>
+            <tr>
+                <th><b>Black Moves ahead:</b></th>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+                <td class="tborder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+            </tr>
+            <tr>
+                <th><b>Black Jumps:</b></th>
+                <td class="tborder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+            </tr>
+            <tr>
+                <th><b>White moves ahead:</b></th>
+                <td class="tborder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/black.png" alt=""></td>
+                <td class="tborder"><img src="images/white.png" alt="whiteimg"></td>
+            </tr>
+            <tr>
+                <th><b>stuck;</b></th>
+            </tr>
+        </table>
 
       <p>
         The backtracking method is named solvable and returns a boolean. In
